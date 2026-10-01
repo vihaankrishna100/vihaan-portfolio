@@ -164,7 +164,9 @@
           flash) build a typed tree of posts and either take a recommendation or
           skip it; the objective is skip rate. each agent gets a
           decision-tree user model (sklearn, entropy splits, pca 3072&rarr;50 on
-          specialist agents plus a facilitator and a synthesizer.
+          post embeddings) trained on its clickstream and retrained every five
+          ticks, and elicited skip reasons feed back into the selector as
+          negative-weight rules.
         </li>
         <li>
           leading
