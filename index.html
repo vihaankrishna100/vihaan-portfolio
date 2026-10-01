@@ -243,7 +243,8 @@
           (fastapi, sqlalchemy, asyncio) where eight persona agents on haiku
           post in parallel under a semaphore, four sonnet role agents
           orchestrate, seed, summarize and moderate, and several recommenders
-          compete to minimise how often they skip.
+          compete to minimise skip rate. every action is logged as a
+          clickstream event for analysis.
         </li>
         <li>
           developed <strong>loftin hub</strong>. internship platform for a
